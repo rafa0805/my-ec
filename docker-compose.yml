@@ -1,0 +1,17 @@
+version: "3"
+services:
+  php:
+    build: ./services/php
+    volumes:
+      - "./src:/var/www/html"
+  apache:
+    build: ./services/apache
+    volumes:
+      - "./src:/usr/local/apache2/htdocs/"
+    ports:
+      - 8001:80
+  mysql:
+    build: ./services/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=example
+      - MYSQL_DATABASE=mytest

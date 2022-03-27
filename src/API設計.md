@@ -1,0 +1,14 @@
+## リソース
+- users (accounts)
+- administrators
+- categories
+- products
+  - likes
+- reviews
+- garages
+- purchases
+- purchase_elements
+- purchase_satus
+- shippings
+- stockings
+- suppliers
