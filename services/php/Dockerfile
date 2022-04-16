@@ -13,8 +13,8 @@ RUN apt-get update && \
         gd \
         mbstring \
         pdo_mysql \
-        xdebug
-        zip \
+        xdebug \
+        zip
 
 
 # Copy composer executable binary from Composer official image
