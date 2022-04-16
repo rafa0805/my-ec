@@ -1,14 +1,103 @@
 ## リソース
 - users (accounts)
+  - POST /users
+  - GET /users
+  - GET /users/*
+  - PUT /users/*
+  - DELETE /users/*
+  - PATCH /users/*/email **************
+  - PATCH /users/*/password **************
 - administrators
+  - POST /administrators
+  - GET /administrators
+  - GET /administrators/*
+  - PUT /administrators/*
+  - DELETE /administrators/*
+  - PATCH /administrators/*/email **************
+  - PATCH /administrators/*/password **************
 - categories
+  - POST /categories
+  - GET /categories
+  - GET /categories/*
+  - PUT /categories/*
+  - DELETE /categories/*
 - products
-  - likes
+  - POST /products
+  - GET /products
+  - GET /categories/*/products
+  - GET /stockyards/*/products
+  - GET /suppliers/*/products
+  - GET /users/*/products/like **********いいねした商品一覧
+  - GET /users/*/products/review **********口コミを登録した商品一覧
+  - GET /products/*
+  - PUT /products/*
+  - DELETE /products/*
+  - PUT /products/*/like
+  - DELETE /products/*/like
+  - PUT /products/*/add-cart ********sessionでやるなら不要かも
+  - DELETE /products/*/add-cart ********sessionでやるなら不要かも
 - reviews
-- garages
+  - POST /reviews
+  - GET /reviews
+  - GET /products/*/reviews
+  - GET /users/*/reviews
+  - GET /reviews/*
+  - PUT /reviews/*
+  - DELETE /reviews/*
+- stockyards
+  - POST /stockyards
+  - GET /stockyards
+  - GET /products/*/stockyards
+  - GET /stockyards/*
+  - PUT /stockyards/*
+  - DELETE /stockyards/*
 - purchases
+  - POST /purchases
+  - GET /purchases
+  - GET /purchase_statuses/*/purchases
+  - GET /purchases/*
+  - PUT /purchases/*
+  - DELETE /purchases/*
 - purchase_elements
-- purchase_satus
+  - POST /purchase_elements
+  - GET /purchase_elements
+  - GET /purchases/*/purchase_elements
+  - GET /purchase_elements/*
+  - GET /purchase_elements/*
+  - GET /purchase_elements/*
+- purchase_satuses
+  <!-- - POST /purchase_satuses -->
+  - GET /purchase_satuses
+  - GET /purchase_satuses/*
+  <!-- - PUT /purchase_satuses/*
+  - DELETE /purchase_satuses/* -->
 - shippings
+  - POST /shippings
+  - GET /shippings
+  - GET /purchases/*/shippings
+  - GET /stockyards/*/shippings
+  - GET /shippings/*
+  - PUT /shippings/*
+  - DELETE /shippings/*
 - stockings
+  - POST /stockings
+  - GET /stockings
+  - GET /stockings/*
+  - PUT /stockings/*
+  - DELETE /stockings/*
 - suppliers
+  - POST /suppliers
+  - GET /suppliers
+  - GET /products/*/suppliers
+  - GET /suppliers/*
+  - PUT /suppliers/*
+  - DELETE /suppliers/*
+- shiires
+  - POST /shiires
+  - GET /shiires
+  - GET /products/*/shiires
+  - GET /suppliers/*/shiires
+  - GET /stockyards/*/shiires
+  - GET /shiires/*
+  - PUT /shiires/*
+  - DELETE /shiires/*
